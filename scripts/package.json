@@ -1,0 +1,10 @@
+{
+  "name": "poly-scripts",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@polymarket/builder-relayer-client": "0.0.8",
+    "@polymarket/builder-signing-sdk": "1.0.0",
+    "viem": "2.31.4"
+  }
+}

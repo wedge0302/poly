@@ -1,0 +1,10 @@
+.env
+target/
+node_modules/
+scripts/node_modules/
+state/
+run/
+logs/
+reports/
+__pycache__/
+.DS_Store
