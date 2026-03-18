@@ -1,6 +1,6 @@
 # poly
 
-Polymarket 工具仓，不包含任何策略、回测或 watcher 逻辑，只保留通用交易/账户/claim 能力。
+Polymarket 工具仓，不包含任何策略、回测或 watcher 逻辑，只保留通用交易/账户/claim/行情接入能力。
 
 ## 包含内容
 
@@ -17,6 +17,13 @@ Polymarket 工具仓，不包含任何策略、回测或 watcher 逻辑，只保
   - 支持 `gnosis-safe` 的链上 redeem 路径
 - `scripts/redeem_condition_relayer.mjs`
   - 官方 Builder relayer 的 gasless redeem helper
+- 可复用 Rust 模块
+  - `src/data/*`：Polymarket / Binance websocket feed
+  - `src/execution/*`：执行与 redeem 相关通用代码
+  - `src/router/*`：Gamma 市场发现与路由
+  - `src/store/*`：SQLite 持久化
+  - `src/notify/*`：Telegram 通知
+  - `src/types.rs` / `src/config.rs` / `src/metrics.rs`
 
 ## 不包含内容
 
